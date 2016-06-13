@@ -5,20 +5,33 @@
   "bugs": {
     "url": "https://github.com/jokeyrhyme/pify-fs/issues"
   },
+  "dependencies": {
+    "graceful-fs": "^4.1.4",
+    "pify": "^2.3.0"
+  },
   "devDependencies": {
     "eslint": "^2.12.0",
     "eslint-config-standard": "^5.3.1",
     "eslint-plugin-promise": "^1.3.2",
     "eslint-plugin-standard": "^1.3.2",
-    "fixpack": "2.3.1"
+    "fixpack": "^2.3.1",
+    "greenkeeper-postpublish": "^1.0.0"
   },
   "engines": {
     "node": ">=6",
     "npm": ">=3"
   },
+  "files": [
+    "index.js"
+  ],
   "homepage": "https://github.com/jokeyrhyme/pify-fs#readme",
-  "keywords": [],
-  "license": "ISC",
+  "keywords": [
+    "fs",
+    "graceful-fs",
+    "pify",
+    "promise"
+  ],
+  "license": "BSD-2-Clause",
   "main": "index.js",
   "publishConfig": {
     "access": "public"
@@ -30,6 +43,8 @@
   "scripts": {
     "eslint": "eslint --fix --cache .",
     "fixpack": "fixpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postpublish": "greenkeeper-postpublish",
+    "posttest": "npm run eslint && npm run fixpack",
+    "test": "node ./test/index.js"
   }
 }
