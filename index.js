@@ -7,7 +7,8 @@ module.exports = pify(fs, {
   exclude: [
     /^exists/,
     /.+Stream$/,
-    /.+Sync$/
+    /.+Sync$/,
+    /watch/
   ],
   excludeMain: true
 })

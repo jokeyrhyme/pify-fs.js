@@ -15,3 +15,7 @@ fs.readdir(CWD)
 assert(!isPromise(fs.exists(CWD)), 'exists() is not pify\'ed')
 
 assert(!isPromise(fs.createReadStream(__filename)), 'createReadStream() is not pify\'ed')
+
+const watcher = fs.watch(__filename)
+assert(!isPromise(watcher), 'watch() is not pify\'ed')
+watcher.close()
