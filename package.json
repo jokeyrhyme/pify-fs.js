@@ -1,7 +1,7 @@
 {
   "name": "@jokeyrhyme/pify-fs",
   "description": "the Node.js fs module, safer via graceful-fs, and more convenient via pify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "bugs": {
     "url": "https://github.com/jokeyrhyme/pify-fs/issues"
   },
