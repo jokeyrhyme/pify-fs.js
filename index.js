@@ -6,6 +6,7 @@ const pify = require('pify')
 module.exports = pify(fs, {
   exclude: [
     /^exists/,
+    /.+Stream$/,
     /.+Sync$/
   ],
   excludeMain: true
