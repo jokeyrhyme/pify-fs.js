@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "graceful-fs": "*",
-    "pify": "^2.3.0"
+    "pify": "^3.0.0"
   },
   "devDependencies": {
     "eslint": "^3.19.0",
