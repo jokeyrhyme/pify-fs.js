@@ -7,7 +7,7 @@
     "url": "https://github.com/jokeyrhyme/pify-fs/issues"
   },
   "dependencies": {
-    "graceful-fs": "*",
+    "graceful-fs": "4.1.11",
     "pify": "^3.0.0"
   },
   "devDependencies": {
